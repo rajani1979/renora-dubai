@@ -1,11 +1,10 @@
-import ContactForm from "@/components/contact/ContactForm";
 import ContactInfo from "@/components/contact/ContactInfo";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact & Get a Quote | Renora Dubai",
+  title: "Contact | Renora Dubai",
   description:
-    "Get a free consultation for your Dubai renovation or maintenance project. Reach Renora via WhatsApp, email, or our quote form.",
+    "Get in touch with Renora Dubai for home renovation and maintenance enquiries. Reach us via WhatsApp or email.",
 };
 
 export default function ContactPage() {
@@ -15,7 +14,7 @@ export default function ContactPage() {
       <section className="bg-renora-black pt-32 pb-16">
         <div className="max-w-7xl mx-auto px-6 lg:px-12">
           <p className="text-renora-gold text-xs tracking-[0.35em] uppercase font-inter font-semibold mb-4">
-            Free Consultation
+            Get in Touch
           </p>
           <h1 className="font-playfair font-bold text-4xl md:text-6xl text-white leading-tight mb-4">
             Let&apos;s Talk About
@@ -23,39 +22,15 @@ export default function ContactPage() {
           </h1>
           <div className="h-px w-14 bg-renora-gold mb-6" />
           <p className="text-white/50 font-inter text-base max-w-xl leading-relaxed">
-            Tell us what you need. We&apos;ll assess, quote clearly, and only
-            begin when you&apos;re confident.
+            Reach out via WhatsApp or email and we&apos;ll get back to you within 24 hours.
           </p>
         </div>
       </section>
 
-      {/* Form + Info */}
+      {/* Contact info */}
       <section className="bg-renora-cream py-24">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12">
-          <div className="grid grid-cols-1 lg:grid-cols-5 gap-16">
-            {/* Form — wider */}
-            <div className="lg:col-span-3 bg-white p-10 shadow-sm">
-              <h2 className="font-playfair font-bold text-2xl text-renora-black mb-2">
-                Send an Enquiry
-              </h2>
-              <p className="text-renora-gray font-inter text-sm mb-8">
-                Fill in the details below and we&apos;ll be in touch within 24 hours.
-              </p>
-              <ContactForm />
-            </div>
-
-            {/* Contact info */}
-            <div className="lg:col-span-2">
-              <h2 className="font-playfair font-bold text-2xl text-renora-black mb-2">
-                Get in Touch
-              </h2>
-              <p className="text-renora-gray font-inter text-sm mb-8">
-                Prefer to talk directly? Reach us on WhatsApp for the fastest
-                response.
-              </p>
-              <ContactInfo />
-            </div>
-          </div>
+        <div className="max-w-3xl mx-auto px-6 lg:px-12">
+          <ContactInfo />
         </div>
       </section>
     </>
